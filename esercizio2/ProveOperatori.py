@@ -10,4 +10,6 @@ print(type(x));
 x = 2 / 2;
 print(type(x));
 
+stringa = "ciao";
 
+print(type(stringa));
