@@ -39,3 +39,5 @@ print(type(x));
 x=2/2;
 print(type(x));
 
+stringMultiRiga = "teste \n pocoto \n rebimboca";
+print(stringMultiRiga);
