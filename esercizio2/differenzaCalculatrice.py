@@ -16,11 +16,16 @@ array_inizio = inizio.split(':')
 
 ora_inizio = int(array_inizio[0])
 minuti_inizio = int(array_inizio[1])
-
+if (minuti_inizio > 59):
+    ora_inizio = ora_inizio + 1
+    minuti_inizio = minuti_inizio - 60
 
 array_fine = fine.split(':')
 ora_fine = int(array_fine[0])
 minuti_fine = int(array_fine[1])
+if (minuti_fine > 59):
+    ora_fine = ora_inizio + 1
+    minuti_fine = minuti_fine - 60
 
 minuti_totale_inizio = ora_inizio * 60 + minuti_inizio
 
