@@ -14,5 +14,7 @@ prima_verifica = 4==5
 seconda_verifica = 3>=2
 risultato = prima_verifica and seconda_verifica
 
-print(risultato)
+print(not risultato)
+
+
 
