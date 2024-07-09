@@ -65,7 +65,7 @@ else:
     ore_differenza = 23 - (differenza // 60);
     if (ore_differenza < 10):
         ore_differenza = "0" + str(ore_differenza);
-    minuti_differenza = differenza % 60;
+    minuti_differenza = 60 - differenza % 60;
     if (minuti_differenza < 10):
         minuti_differenza = "0" + str(minuti_differenza);
     differenza_format = str(ore_differenza) + ":" + str(minuti_differenza);
