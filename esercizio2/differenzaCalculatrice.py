@@ -62,7 +62,7 @@ if (minuti_totale_fine > minuti_totale_inizio):
 else:
     differenza = minuti_totale_inizio - minuti_totale_fine;
     # print(differenza);
-    ore_differenza = 24 - (differenza // 60);
+    ore_differenza = 23 - (differenza // 60);
     if (ore_differenza < 10):
         ore_differenza = "0" + str(ore_differenza);
     minuti_differenza = differenza % 60;
