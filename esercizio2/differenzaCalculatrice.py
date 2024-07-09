@@ -1,4 +1,6 @@
+print();
 print("Benvenuto alla calcolatrice della differenza tra due orari");
+print();
 print("ora inizio nel formato 'hh:mm' :");
 inizio = input();
 while (':' not in inizio):
