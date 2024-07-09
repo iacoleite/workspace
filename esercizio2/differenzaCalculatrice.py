@@ -69,7 +69,7 @@ else:
     if (minuti_differenza < 10):
         minuti_differenza = "0" + str(minuti_differenza);
     differenza_format = str(ore_differenza) + ":" + str(minuti_differenza);
-    print("Un giorno e " + differenza_format);
+    print(differenza_format);
 
 
 
