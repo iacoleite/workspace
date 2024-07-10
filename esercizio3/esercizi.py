@@ -4,6 +4,7 @@
 2- Prendere in input 3 numeri e fornire in outuput il valore minimo tra i 3
 
 3-  dall'esercizio 3 della scorsa volta verificar con il ciclo while che fli input siano numeri vallidi
+    - nota: ho fatto nel esercizio 2 di questa lista di esercizi
 
 4- la prima volta che l'uomo è andato sulla luna è stato il 1969 creare un programa che chiede l'anno di nascita all'utente
     e risponde se è nato l'anno in cui l'uomo è andato sulla luna e quanti anni prima o quanti anni dopo
@@ -17,57 +18,57 @@
 
 """
 # ESERCIZIO 1
-# numero_1 = input("Uno numero: ")
-# numero_2 = input("Altro numero: ")
+numero_1 = input("Uno numero: ")
+numero_2 = input("Altro numero: ")
 
-# if (numero_1 > numero_2):
-#     print(f"il numero massimo è {numero_1}")
-# else:
-#     print(f"il numero massimo è {numero_2}")
+if (numero_1 > numero_2):
+    print(f"il numero massimo è {numero_1}")
+else:
+    print(f"il numero massimo è {numero_2}")
 
 
 
 # ESERCIZIO 2 e 3
 
-# print("sceglie 3 numeri: ")
+print("sceglie 3 numeri: ")
 
-# a = input("numero 1: ");
-# while (a.isnumeric() != True):
-#     print("Deve sceglie un numero")
-#     a = input("numero 1: ");
+a = input("numero 1: ");
+while (a.isnumeric() != True):
+    print("Deve sceglie un numero")
+    a = input("numero 1: ");
 
-# b = input("numero 2: ");
-# while (b.isnumeric() != True):
-#     print("Deve sceglie un numero")
-#     b = input("numero 2: ");
+b = input("numero 2: ");
+while (b.isnumeric() != True):
+    print("Deve sceglie un numero")
+    b = input("numero 2: ");
 
-# c = input("numero 3: ");
-# while (c.isnumeric() == False):
-#     print("Deve sceglie un numero")
-#     c = input("numero 1: ");
+c = input("numero 3: ");
+while (c.isnumeric() == False):
+    print("Deve sceglie un numero")
+    c = input("numero 1: ");
 
-# numero_minimo =a
-# if (b < numero_minimo ):
-#     numero_minimo=b
-# if (c < numero_minimo):
-#     numero_minimo = c
+numero_minimo =a
+if (b < numero_minimo ):
+    numero_minimo=b
+if (c < numero_minimo):
+    numero_minimo = c
 
-# print(f"il numero minimo è {numero_minimo}")
+print(f"il numero minimo è {numero_minimo}")
 
 
 
 
 # ESERCIZIO 4
-# print()
-# anno_di_nascita = input("Quando sei natto? ");
-# if (int(anno_di_nascita) == 1969):
-#     print("Sei natto nello stesso anno che l'uomo è arrivato sulla luna!")
-# elif (int(anno_di_nascita) < 1969):
-#     anni_prima = 1969 - int(anno_di_nascita);
-#     print(f"Sei natto {anni_prima} anni prima che l'uomo è arrivato sulla luna!")
-# else:
-#     anni_dopo = int(anno_di_nascita) - 1969;
-#     print(f"Sei natto {anni_dopo} anni dopo che l'uomo è arrivato sulla luna!")
+print()
+anno_di_nascita = input("Quando sei natto? ");
+if (int(anno_di_nascita) == 1969):
+    print("Sei natto nello stesso anno che l'uomo è arrivato sulla luna!")
+elif (int(anno_di_nascita) < 1969):
+    anni_prima = 1969 - int(anno_di_nascita);
+    print(f"Sei natto {anni_prima} anni prima che l'uomo è arrivato sulla luna!")
+else:
+    anni_dopo = int(anno_di_nascita) - 1969;
+    print(f"Sei natto {anni_dopo} anni dopo che l'uomo è arrivato sulla luna!")
 
 
 
@@ -87,19 +88,16 @@ lista.append(a)
 lista.append(b)
 lista.append(c)
 # lista.sort();
+
 numeri_di_elementi = len(lista)
 
-
+# algoritmo sort (Bubble sort penso)
 for i in range (numeri_di_elementi):
-    for j in range (0, (numeri_di_elementi - 1)):
+    # for j in range (0, (numeri_di_elementi - 1)):
     # piú efficiente se facciamo così (-i), senza verificare i numeri già spostati al posto giusto  
-    # for j in range (0, (numeri_di_elementi - i - 1)):
+    for j in range (0, (numeri_di_elementi - i - 1)):
         if (lista[j] > lista[j + 1]):
             lista[j], lista[j + 1] = lista[j + 1], lista[j]
-
-
-
-
 
 print(lista)
 
@@ -114,25 +112,25 @@ print(f"In ordine crescente: {a}, {b}, {c}")
 
 # # ESERCIZIO 6
 
-# print("Benvenuto all'asta della ferrari che come sei minorenne non puoi guidare!")
-# print("per retirarsi deve fare una offerta di valore 0")
+print("Benvenuto all'asta della ferrari che come sei minorenne non puoi guidare!")
+print("per retirarsi deve fare una offerta di valore 0")
 
-# usuario1 = input("Usuario 1, faccia una offerta: ")
-# usuario2 = input("Usuario 2, faccia una offerta: ")
-# valore_piu_alto = 0;
-# if (int(usuario1) > valore_piu_alto):
-#     valore_piu_alto = int(usuario1)
-# if (int(usuario2) > valore_piu_alto):
-#     valore_piu_alto = int(usuario2)
+usuario1 = input("Usuario 1, faccia una offerta: ")
+usuario2 = input("Usuario 2, faccia una offerta: ")
+valore_piu_alto = 0;
+if (int(usuario1) > valore_piu_alto):
+    valore_piu_alto = int(usuario1)
+if (int(usuario2) > valore_piu_alto):
+    valore_piu_alto = int(usuario2)
 
-# while (usuario1 != "0" and usuario2 != "0"):
-#     print(f"Valore attuale: {valore_piu_alto}")
-#     usuario1 = input("Usuario 1, faccia una offerta: ")
-#     if (int(usuario1) > valore_piu_alto):
-#         valore_piu_alto = int(usuario1)
-#     usuario2 = input("Usuario 2, faccia una offerta: ")
-#     if (int(usuario2) > valore_piu_alto):
-#         valore_piu_alto = int(usuario2)
+while (usuario1 != "0" and usuario2 != "0"):
+    print(f"Valore attuale: {valore_piu_alto}")
+    usuario1 = input("Usuario 1, faccia una offerta: ")
+    if (int(usuario1) > valore_piu_alto):
+        valore_piu_alto = int(usuario1)
+    usuario2 = input("Usuario 2, faccia una offerta: ")
+    if (int(usuario2) > valore_piu_alto):
+        valore_piu_alto = int(usuario2)
 
 
 
