@@ -91,6 +91,8 @@ numeri_di_elementi = len(lista)
 
 
 for i in range (numeri_di_elementi):
+    # for j in range (0, (numeri_di_elementi - 1)):
+    # piú efficiente se facciamo così (-i), senza verificare i numeri già spostati al posto giusto  
     for j in range (0, (numeri_di_elementi - i - 1)):
         if (lista[j] > lista[j + 1]):
             lista[j], lista[j + 1] = lista[j + 1], lista[j]
