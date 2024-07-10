@@ -118,6 +118,8 @@ print("per retirarsi deve fare una offerta di valore 0")
 usuario1 = input("Usuario 1, faccia una offerta: ")
 usuario2 = input("Usuario 2, faccia una offerta: ")
 valore_piu_alto = 0;
+usuario_compratore = ""
+
 if (int(usuario1) > valore_piu_alto):
     valore_piu_alto = int(usuario1)
 if (int(usuario2) > valore_piu_alto):
@@ -128,9 +130,13 @@ while (usuario1 != "0" and usuario2 != "0"):
     usuario1 = input("Usuario 1, faccia una offerta: ")
     if (int(usuario1) > valore_piu_alto):
         valore_piu_alto = int(usuario1)
+        usuario_compratore = "usuario 1"
     usuario2 = input("Usuario 2, faccia una offerta: ")
     if (int(usuario2) > valore_piu_alto):
         valore_piu_alto = int(usuario2)
+        usuario_compratore = "usuario 2"
+
+print(f"Ferrari è stata venduta per {valore_piu_alto} euro all'{usuario_compratore}")
 
 
 
