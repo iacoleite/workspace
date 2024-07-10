@@ -89,15 +89,12 @@ c = int(c)
 # lista.sort();
 # print(lista)
 
-if (c < a and c < b):
-    provisorio = a
-    a = c
-    c = provisorio
-    if (c < b or b < a):
-        provisorio2 = b
-        b = c
-        c = provisorio2
-
+if (b < a):
+    a, b = b, a
+if (c < b):
+    b, c = c, b
+if (b < a):
+    a, b = b, a
 
 print(f"In ordine crescente: {a}, {b}, {c}")
 
