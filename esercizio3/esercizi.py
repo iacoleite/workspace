@@ -82,19 +82,30 @@ a = int(a)
 b = int(b)
 c = int(c)
 
-# lista = []
-# lista.append(a)
-# lista.append(b)
-# lista.append(c)
+lista = [123, 345, 654, 3, 4, 34,65, 5, 234, 536, 765, 23, 4]
+lista.append(a)
+lista.append(b)
+lista.append(c)
 # lista.sort();
-# print(lista)
+numeri_di_elementi = len(lista)
 
-if (b < a):
-    a, b = b, a
-if (c < b):
-    b, c = c, b
-if (b < a):
-    a, b = b, a
+
+for i in range (numeri_di_elementi):
+    for j in range (0, (numeri_di_elementi - i - 1)):
+        if (lista[j] > lista[j + 1]):
+            lista[j], lista[j + 1] = lista[j + 1], lista[j]
+
+
+
+
+
+print(lista)
+# if (b < a):
+#     a, b = b, a
+# if (c < b):
+#     b, c = c, b
+# if (b < a):
+#     a, b = b, a
 
 print(f"In ordine crescente: {a}, {b}, {c}")
 
