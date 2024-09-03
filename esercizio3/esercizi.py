@@ -19,14 +19,14 @@
 # """
 
 
-# # ESERCIZIO 1
-# numero_1 = input("Uno numero: ")
-# numero_2 = input("Altro numero: ")
+# ESERCIZIO 1
+numero_1 = input("Uno numero: ")
+numero_2 = input("Altro numero: ")
 
-# if (numero_1 > numero_2):
-#     print(f"il numero massimo è {numero_1}")
-# else:
-#     print(f"il numero massimo è {numero_2}")
+if (numero_1 > numero_2):
+    print(f"il numero massimo è {numero_1}")
+else:
+    print(f"il numero massimo è {numero_2}")
 
 
 
@@ -75,45 +75,45 @@
 
 
 # ESERCIZIO 5
-print("sceglie 3 numeri: ")
+# print("sceglie 3 numeri: ")
 
-a = input("numero 1: ");
-b = input("numero 2: ");
-c = input("numero 3: ");
+# a = input("numero 1: ");
+# b = input("numero 2: ");
+# c = input("numero 3: ");
 
-a = int(a)
-b = int(b)
-c = int(c)
+# a = int(a)
+# b = int(b)
+# c = int(c)
 
-lista = []
-# lista = [123, 345, 654, 3, 4, 34,65, 5, 234, 536, 765, 23, 4]
-lista.append(a)
-lista.append(b)
-lista.append(c)
-# lista.sort();
+# lista = []
+# # lista = [123, 345, 654, 3, 4, 34,65, 5, 234, 536, 765, 23, 4]
+# lista.append(a)
+# lista.append(b)
+# lista.append(c)
+# # lista.sort();
 
-lista.remove(25)
+# lista.remove(25)
 
-numeri_di_elementi = len(lista)
+# numeri_di_elementi = len(lista)
 
-# algoritmo sort (Bubble sort penso)
-for i in range (numeri_di_elementi):
-    # for j in range (0, (numeri_di_elementi - 1)):
-    # piú efficiente se facciamo così (-i), senza verificare i numeri già spostati al posto giusto  
-    for j in range (0, (numeri_di_elementi - i - 1)):
-        if (lista[j] > lista[j + 1]):
-            lista[j], lista[j + 1] = lista[j + 1], lista[j]
+# # algoritmo sort (Bubble sort penso)
+# for i in range (numeri_di_elementi):
+#     # for j in range (0, (numeri_di_elementi - 1)):
+#     # piú efficiente se facciamo così (-i), senza verificare i numeri già spostati al posto giusto  
+#     for j in range (0, (numeri_di_elementi - i - 1)):
+#         if (lista[j] > lista[j + 1]):
+#             lista[j], lista[j + 1] = lista[j + 1], lista[j]
 
-print(lista)
+# print(lista)
 
-if (b < a):
-    a, b = b, a
-if (c < b):
-    b, c = c, b
-if (b < a):
-    a, b = b, a
+# if (b < a):
+#     a, b = b, a
+# if (c < b):
+#     b, c = c, b
+# if (b < a):
+#     a, b = b, a
 
-print(f"In ordine crescente: {a}, {b}, {c}")
+# print(f"In ordine crescente: {a}, {b}, {c}")
 
 # # # ESERCIZIO 6
 
