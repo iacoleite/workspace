@@ -1,0 +1,3 @@
+import menuCalcolatrice
+
+menuCalcolatrice.apreCalcolatrice()

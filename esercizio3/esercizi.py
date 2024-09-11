@@ -20,17 +20,17 @@
 
 
 # ESERCIZIO 1
-numero_1 = input("Uno numero: ")
-numero_2 = input("Altro numero: ")
+# numero_1 = input("Uno numero: ")
+# numero_2 = input("Altro numero: ")
 
-if (numero_1 > numero_2):
-    print(f"il numero massimo è {numero_1}")
-else:
-    print(f"il numero massimo è {numero_2}")
+# if (numero_1 > numero_2):
+#     print(f"il numero massimo è {numero_1}")
+# else:
+#     print(f"il numero massimo è {numero_2}")
 
 
 
-# # ESERCIZIO 2 e 3
+# ESERCIZIO 2 e 3
 
 # print("sceglie 3 numeri: ")
 
@@ -96,7 +96,7 @@ else:
 
 # numeri_di_elementi = len(lista)
 
-# # algoritmo sort (Bubble sort penso)
+# algoritmo sort (Bubble sort penso)
 # for i in range (numeri_di_elementi):
 #     # for j in range (0, (numeri_di_elementi - 1)):
 #     # piú efficiente se facciamo così (-i), senza verificare i numeri già spostati al posto giusto  
@@ -117,31 +117,31 @@ else:
 
 # # # ESERCIZIO 6
 
-# print("Benvenuto all'asta della ferrari che come sei minorenne non puoi guidare!")
-# print("per retirarsi deve fare una offerta di valore 0")
+print("Benvenuto all'asta della ferrari che come sei minorenne non puoi guidare!")
+print("per retirarsi deve fare una offerta di valore 0")
 
-# usuario1 = input("Usuario 1, faccia una offerta: ")
-# usuario2 = input("Usuario 2, faccia una offerta: ")
-# valore_piu_alto = 0;
-# usuario_compratore = ""
+usuario1 = input("Usuario 1, faccia una offerta: ")
+usuario2 = input("Usuario 2, faccia una offerta: ")
+valore_piu_alto = 0;
+usuario_compratore = ""
 
-# if (int(usuario1) > valore_piu_alto):
-#     valore_piu_alto = int(usuario1)
-# if (int(usuario2) > valore_piu_alto):
-#     valore_piu_alto = int(usuario2)
+if (int(usuario1) > valore_piu_alto):
+    valore_piu_alto = int(usuario1)
+if (int(usuario2) > valore_piu_alto):
+    valore_piu_alto = int(usuario2)
 
-# while (usuario1 != "0" and usuario2 != "0"):
-#     print(f"Valore attuale: {valore_piu_alto}")
-#     usuario1 = input("Usuario 1, faccia una offerta: ")
-#     if (int(usuario1) > valore_piu_alto):
-#         valore_piu_alto = int(usuario1)
-#         usuario_compratore = "usuario 1"
-#     usuario2 = input("Usuario 2, faccia una offerta: ")
-#     if (int(usuario2) > valore_piu_alto):
-#         valore_piu_alto = int(usuario2)
-#         usuario_compratore = "usuario 2"
+while (usuario1 != "0" and usuario2 != "0"):
+    print(f"Valore attuale: {valore_piu_alto}")
+    usuario1 = input("Usuario 1, faccia una offerta: ")
+    if (int(usuario1) > valore_piu_alto):
+        valore_piu_alto = int(usuario1)
+        usuario_compratore = "usuario 1"
+    usuario2 = input("Usuario 2, faccia una offerta: ")
+    if (int(usuario2) > valore_piu_alto):
+        valore_piu_alto = int(usuario2)
+        usuario_compratore = "usuario 2"
 
-# print(f"Ferrari è stata venduta per {valore_piu_alto} euro all' {usuario_compratore}")
+print(f"Ferrari è stata venduta per {valore_piu_alto} euro all' {usuario_compratore}")
 
 
 
