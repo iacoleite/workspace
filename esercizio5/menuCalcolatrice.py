@@ -20,38 +20,40 @@ menu = """    Menu di Operazione
         6. Esponenziale
         7. Numero massimo tra 2 o 3 numeri
         8. Numero minimo tra 2 o 3 numeri
+        9. Numero massimo tra X numeri
+       10. Numero minimo tra X numeri
 
         0. Uscire
 """
+
+
+
+
 def apreCalcolatrice():
+
     print(splash)
     while(True):
         print(menu)
         operazione = input("    Inserisci il numero corrispondente all'operazione da effettuare: ")
         match operazione:
             case "1":
-                n = input("primo numero: ")
-                m = input("secondo numero: ")
-                print("Risultato: " + str(calcolatrice.somma(n, m)))
+                arr = prendeXnumeri()
+                print("Risultato: " + str(calcolatrice.somma(arr)))
             case "2":
-                n = input("primo numero: ")
-                m = input("secondo numero: ")
-                print("Risultato: " + str(calcolatrice.sottrazione(n, m)))
+                arr = prende2numeri()
+                print("Risultato: " + str(calcolatrice.sottrazione(arr[0], arr[1])))
             case "3":
-                n = input("primo numero: ")
-                m = input("secondo numero: ")
-                print("Risultato: " + str(calcolatrice.moltiplicazione(n, m)))
+                arr = prende2numeri()
+                print("Risultato: " + str(calcolatrice.moltiplicazione(arr[0], arr[1])))
             case "4":
-                n = input("primo numero: ")
-                m = input("secondo numero: ")
-                print("Risultato: " + str(calcolatrice.divisione(n, m)))
+                arr = prende2numeri()
+                print("Risultato: " + str(calcolatrice.divisione(arr[0], arr[1])))
             case "5":
                 base = input("base della radice: ")
                 print("Risultato: " + str(calcolatrice.radiceQuadrata(base)))
             case "6":
-                n = input("numero: ")
-                m = input("potenza: ")
-                print("Risultato: " + str(calcolatrice.potenza(n, m)))
+                arr = prende2numeri()
+                print("Risultato: " + str(calcolatrice.potenza(arr[0], arr[1])))
             case "7":
                 n = input("primo numero: ")
                 m = input("secondo numero: ")
@@ -62,20 +64,29 @@ def apreCalcolatrice():
                 m = input("secondo numero: ")
                 z = input("terzo numero (opzionale): ")
                 print("Risultato: " + str(calcolatrice.minimo(n, m, z)))
+            case "9":
+                n = input("Quanti numeri vuole inserire? ")
+                a = prendeXnumeri(int(n))
+                print(calcolatrice.massimoArray(a))
+            case "10":
+                n = input("Quanti numeri vuole inserire? ")
+                arr = prendeXnumeri(int(n))
+                print(calcolatrice.minimoArray(arr))
             case "0":
                 print("Ciao!")
                 quit()
             case default:
                 print("Scelta invalida!")
 
+def prende2numeri():
+    n = input("primo numero: ")
+    m = input("secondo numero: ")
+    return [n, m]
 
-            # if operazine == "1":
-            #     n = input("primo numero: ")
-            #     m = input("secondo numero: ")
-            #     print("Risultato: " + str(calcolatrice.somma(n, m)))
-            # elif operazione == "2":
-            #     n = input("primo numero: ")
-            #     m = input("secondo numero: ")
-            #     print("Risultato: " + str(calcolatrice.somma(n, m)))
-            #     ...
+def prendeXnumeri(n):
+    arr = []
+    for i in range (n):
+        numero = input(f"Inserisca il {i+1} elemento: ")
+        arr.append(int(numero))
+    return arr
 

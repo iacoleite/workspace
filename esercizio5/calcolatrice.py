@@ -12,8 +12,8 @@ def minimo(n, m, z = False):
     else:
         return n if (n <= m and n <= z) else m if (m <= n and m <= z) else z if (z <= n and z <= m) else None
 
-def somma(n, m):
-    return float(n) + float(m)
+def somma(arr):
+    return sum(arr)
 
 def sottrazione(n, m):
     return float(n) - float(m)
@@ -33,6 +33,11 @@ def radiceQuadrata(base):
 def potenza(n, m):
     return math.pow(float(n),float(m))
 
+def massimoArray(arr):
+    return max(arr)
+
+def minimoArray(arr):
+    return min(arr)
 
 # def apreCalcolatrice():
 #     print(splash)

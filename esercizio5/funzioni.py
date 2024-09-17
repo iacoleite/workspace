@@ -15,4 +15,13 @@ def calcoloMaximo(a, b):
 
 
 
-calcolatrice.apreCalcolatrice()
+# calcolatrice.apreCalcolatrice()
+
+lista = []
+
+lista.append("POCOTO")
+
+print(lista)
+
+del lista[0]
+print(lista)
