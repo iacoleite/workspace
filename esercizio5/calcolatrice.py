@@ -34,6 +34,7 @@ def potenza(n, m):
     return math.pow(float(n),float(m))
 
 def massimoArray(arr):
+
     return max(arr)
 
 def minimoArray(arr):

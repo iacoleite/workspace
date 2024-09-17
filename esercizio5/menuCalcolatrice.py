@@ -67,11 +67,11 @@ def apreCalcolatrice():
             case "9":
                 n = input("Quanti numeri vuole inserire? ")
                 a = prendeXnumeri(int(n))
-                print(calcolatrice.massimoArray(a))
+                print("Il numero massimo è: " + calcolatrice.massimoArray(a))
             case "10":
                 n = input("Quanti numeri vuole inserire? ")
                 arr = prendeXnumeri(int(n))
-                print(calcolatrice.minimoArray(arr))
+                print("Risultato: " + calcolatrice.minimoArray(arr))
             case "0":
                 print("Ciao!")
                 quit()
@@ -86,7 +86,7 @@ def prende2numeri():
 def prendeXnumeri(n):
     arr = []
     for i in range (n):
-        numero = input(f"Inserisca il {i+1} elemento: ")
+        numero = input(f"Inserisci il {i+1} elemento: ")
         arr.append(int(numero))
     return arr
 
