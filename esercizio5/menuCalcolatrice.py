@@ -37,7 +37,7 @@ def apreCalcolatrice():
         operazione = input("    Inserisci il numero corrispondente all'operazione da effettuare: ")
         match operazione:
             case "1":
-                arr = prendeXnumeri()
+                arr = prende2numeri()
                 print("Risultato: " + str(calcolatrice.somma(arr)))
             case "2":
                 arr = prende2numeri()
@@ -81,7 +81,10 @@ def apreCalcolatrice():
 def prende2numeri():
     n = input("primo numero: ")
     m = input("secondo numero: ")
-    return [n, m]
+    try: 
+        return [float(n), float(m)]
+    except ValueError:
+        return "Solamente numeri!"
 
 def prendeXnumeri(n):
     arr = []

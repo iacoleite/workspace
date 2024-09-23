@@ -19,7 +19,10 @@ def sottrazione(n, m):
     return float(n) - float(m)
 
 def moltiplicazione(n, m):
-    return float(n) * float(m)
+    try:
+        return float(n) * float(m)
+    except ValueError:
+        return "Inserire solamente numeri!"
 
 def divisione(n, m):
     try:
